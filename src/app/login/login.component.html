@@ -1,0 +1,36 @@
+<div
+  class="flex justify-center items-center h-screen flex-col-reverse md:flex-row"
+  style="background-color: rgb(247, 253, 253)"
+>
+  <div class="w-full md:w-1/3 p-4 md:p-11 md:mt-[-150px]">
+    <p class="text-xl md:text-4xl lg:text-6xl font-bold">
+      Assuma <span class="text-[#1DBBC4]">o controlo do seu dinheiro</span>
+    </p>
+    <p class="mb-8 text-xs md:text-xl lg:text-2xl">
+      Orçamento pessoal é o segredo da liberdade financeira. Comece sua jornada
+      hoje.
+    </p>
+    <form class="flex flex-col items-start" (ngSubmit)="onSubmit()">
+      <input
+        name="username"
+        [(ngModel)]="username"
+        class="w-3/4 md:w-1/2 p-1 rounded mb-4 border border-gray-200 text-sm md:text-md"
+        type="text"
+        placeholder="Nome do utilizador"
+      />
+      <button
+        class="w-1/2 md:w-1/4 p-1 rounded bg-black text-white text-sm md:text-md"
+        type="submit"
+      >
+        Criar conta
+      </button>
+    </form>
+  </div>
+  <div class="w-full md:w-1/2">
+    <img
+      src="/assets/illustration.jpg"
+      alt="Ilustração"
+      class="w-full h-auto"
+    />
+  </div>
+</div>

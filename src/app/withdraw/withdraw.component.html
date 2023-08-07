@@ -1,0 +1,25 @@
+<div mat-dialog-content>
+  <p>Quanto deseja sacar?</p>
+  <mat-form-field>
+    <input
+      matInput
+      [formControl]="withdrawAmount"
+      placeholder="Montante de saque"
+    />
+    <mat-error *ngIf="withdrawAmount.invalid && withdrawAmount.touched">
+      Por favor, insira uma quantia válida.
+    </mat-error>
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput [formControl]="expenseName" placeholder="Nome da despesa" />
+    <mat-error *ngIf="expenseName.invalid && expenseName.touched">
+      Por favor, insira o nome da despesa.
+    </mat-error>
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onCancel()">Cancelar</button>
+  <button mat-button [disabled]="withdrawForm.invalid" (click)="onWithdraw()">
+    Sacar
+  </button>
+</div>

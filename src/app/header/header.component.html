@@ -1,0 +1,16 @@
+<mat-toolbar color="primary">
+  <div style="display: flex; justify-content: space-between; width: 100%">
+    <div style="display: flex; align-items: center">
+      <mat-icon class="mr-1">home</mat-icon>
+      <span>HomeBank</span>
+    </div>
+    <button
+      *ngIf="username"
+      mat-button
+      class="mr-1 text-white"
+      (click)="logout()"
+    >
+      Apagar utilizador
+    </button>
+  </div>
+</mat-toolbar>

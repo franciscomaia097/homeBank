@@ -1,0 +1,19 @@
+<div mat-dialog-content>
+  <p>Quanto deseja depositar?</p>
+  <mat-form-field>
+    <input
+      matInput
+      [formControl]="depositAmount"
+      placeholder="Montante de depósito"
+    />
+    <mat-error *ngIf="depositAmount.invalid && depositAmount.touched">
+      Por favor escolha uma quantia válida
+    </mat-error>
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onCancel()">Cancelar</button>
+  <button mat-button [disabled]="depositAmount.invalid" (click)="onDeposit()">
+    Depositar
+  </button>
+</div>
