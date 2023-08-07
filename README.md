@@ -1,27 +1,34 @@
-# HomeBank
+HomeBank
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.7.
+HomeBank is a simple banking application designed with Angular. It includes features such as user login, depositing and withdrawing funds, and tracking transactions.
 
-## Development server
+Installation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Before starting the installation, make sure you have the latest version of Node.js and npm installed. You can verify by running:
 
-## Code scaffolding
+node -v
+npm -v
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+After verifying the requirements, clone the repository and navigate into it:
 
-## Build
+git clone https://github.com/franciscomaia097/home-bank.git
+cd home-bank
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Next, install the necessary dependencies:
 
-## Running unit tests
+npm install
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Usage
 
-## Running end-to-end tests
+To start the server, run the following command:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+ng serve
 
-## Further help
+Then, navigate to http://localhost:4200/ on your web browser.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Features
+
+User Login: User login functionality with a simple form validation.
+Balance Management: Users can deposit or withdraw money, with the balance being updated in real time.
+Transactions Tracker: All transactions (deposits and withdrawals) are recorded and can be viewed in a transaction table.
+
